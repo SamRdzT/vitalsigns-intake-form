@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+h1 {
+    color: #103e9a;
+}
+
+.section-title {
+    color: #194398;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    padding: 5px;
+    width: 300px;
+}
+
+input[type="radio"] {
+    display: inline;
+    width: auto;
+    margin: 0;
+}
+
+input[type="checkbox"] {
+    display: inline;
+    width: auto;
+    margin: 0;
+}
+
+.required {
+    color: #ff0000;
+}
+
+#submit-btn {
+    background-color: #3174fa;
+    color: #ffffff;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #204ba0;
+}
+
+footer {
+    margin-top: 30px;
+    color: #949494;
+    font-size: 12px;
+}

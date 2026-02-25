@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalSigns Patient Intake Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <span class="logo-text">VitalSigns</span>
+        <p>Patient Registration Form</p>
+    </header>
+
+    <main>
+        <h1>Patient Intake Form</h1>
+
+        <form id="intake-form">
+
+            <h2 class="section-title">Account Information</h2>
+
+            <label for="fullName">Full Name <span class="required">*</span></label>
+            <input type="text" id="fullName" name="fullName" placeholder="e.g. Maria Gonzalez" required />
+
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+            <label for="password">Portal Password <span class="required">*</span></label>
+            <input type="password" id="password" name="password" minlength="8" placeholder="Min. 8 characters" required />
+
+            <h2 class="section-title">Personal Details</h2>
+
+            <label for="dob">Date of Birth <span class="required">*</span></label>
+            <input type="text" id="dob" name="dob" placeholder="MM/DD/YYYY" required />
+
+            <label for="height">Height (cm)</label>
+            <input type="number" id="height" name="height" min="100" max="300" placeholder="e.g. 170" />
+
+            <label>Gender</label>
+            <div class="radio-group">
+                <label for="genderMale">
+                    <input type="radio" id="genderMale" name="gender" value="Male" /> Male
+                </label>
+                <label for="genderFemale">
+                    <input type="radio" id="genderFemale" name="gender" value="Female" /> Female
+                </label>
+                <label for="genderOther">
+                    <input type="radio" id="genderOther" name="gender" value="Other" /> Other
+                </label>
+            </div>
+
+            <label for="bloodType">Blood Type</label>
+            <select id="bloodType" name="bloodType">
+                <option value="" disabled selected>Select blood type</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="Unknown">Unknown</option>
+            </select>
+
+            <h2 class="section-title">Medical History</h2>
+
+            <label for="medicalHistory">Conditions, Allergies & Notes</label>
+            <textarea id="medicalHistory" name="medicalHistory" placeholder="e.g. Allergic to a drug, prior surgery, etc..."></textarea>
+
+            <div class="consent-block">
+                <input type="checkbox" id="consent" name="consent" required />
+                <label for="consent">I agree to the Terms of Service and Privacy Policy. <span class="required">*</span></label>
+            </div>
+
+            <button type="submit" id="submit-btn">Create Patient Account</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2025 VitalSigns Health Portal</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
